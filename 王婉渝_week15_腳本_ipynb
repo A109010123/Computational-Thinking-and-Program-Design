@@ -1,0 +1,467 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "王婉渝_week15_腳本.",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/A109010123/Computational-Thinking-and-Program-Design/blob/main/%E7%8E%8B%E5%A9%89%E6%B8%9D_week15_%E8%85%B3%E6%9C%AC_ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "n6BKTQ-l0Vkr"
+      },
+      "source": [
+        "组长：张轩绮\n",
+        "\n",
+        "组员：郭思綦\n",
+        "\n",
+        "  王婉渝\n",
+        "\n",
+        "  张嘉恩\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QP2YhZoP7Zzm"
+      },
+      "source": [
+        "聊天机器人\n",
+        "“你好，请问你叫什么名字？”\n",
+        "\n",
+        "“name，很高兴认识你！”\n",
+        "\n",
+        "“你今年几岁了？”\n",
+        "\n",
+        "“好巧，我也是~”\n",
+        "\n",
+        "“有对象吗？”\n",
+        "\n",
+        "“哇，这样真不错！”\n",
+        "\n",
+        "“你喜欢吃什么？”\n",
+        "\n",
+        "“我喜欢吃意大利面。”\n",
+        "\n",
+        "“你吃辣吗？”\n",
+        "\n",
+        "“我只爱吃甜的。”"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IUKfh5iV7wNj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fcf28538-45b8-4925-93fc-c8635529b7e6"
+      },
+      "source": [
+        "print(\"哈囉，大家好。我叫eva，是一個聊天機器人。\")\n",
+        "print(f\"我喜歡到處吃美食!也喜歡玩各種遊戲~\")\n",
+        "hello = \"很高興認識你們，請大家多多指教。\"\n",
+        "print(hello)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "哈囉，大家好。我叫eva，是一個聊天機器人。\n",
+            "我喜歡到處吃美食!也喜歡玩各種遊戲~\n",
+            "很高興認識你們，請大家多多指教。\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "irUlrglVPJBr",
+        "outputId": "5ad62d78-22d7-4feb-88f2-299a94daea64"
+      },
+      "source": [
+        "name = input(\"嗨！妳好，你叫什麼名字啊?：\")\n",
+        "print(f\"{name}, 很高興認識你，我們一定可以成為很好的朋友!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "嗨！妳好，你叫什麼名字啊?：elle\n",
+            "elle, 很高興認識你，我們一定可以成為很好的朋友!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8ibrCobMP6Xl",
+        "outputId": "07510afe-331f-4e44-ae3d-5472b3b83cd4"
+      },
+      "source": [
+        "age=input(\"你今年幾歲了啊?\")\n",
+        "print(f\"{age}了啊!跟我一樣耶!太巧了\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "你今年幾歲了啊?19\n",
+            "19了啊!跟我一樣耶!太巧了\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KG7GZ9rAQbQv",
+        "outputId": "7b75728d-629b-468c-d4b0-ea833071a13a"
+      },
+      "source": [
+        "print(\"我們來玩猜數字吧\")\n",
+        "num=int(input(\"1-10猜一個數字吧\"))\n",
+        "if num>5:\n",
+        "    print(\"猜錯啦!我的數字是5!比你猜的小一點呢!\")\n",
+        "elif num<5:\n",
+        "    print(\"猜錯啦!我的數字是5!比你猜的大一點呢!\")\n",
+        "else:\n",
+        "    print(\"猜對啦!答案就是數字5!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "我們來玩猜數字吧\n",
+            "1-10猜一個數字吧7\n",
+            "猜錯啦!我的數字是5!比你猜的小一點呢!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ELbS79WQUL3G",
+        "outputId": "8e9d17e6-8dd0-478b-9256-b9973696c188"
+      },
+      "source": [
+        "print(\"明天的午餐我打算吃義大利麵!\")\n",
+        "food=input(\"你要吃點什麼呢?\")\n",
+        "print(f\"{food}!哇!聽起來真不錯!\")\n",
+        "print(\"不過還是不要太常吃喔~讓我來幫你測一下BMI吧\")\n",
+        "w=float(input('請輸入體重(KG)?'))\n",
+        "h=float(input('請輸入身高(M)?'))\n",
+        "bmi=w/(h*h)\n",
+        "print('BMI為',bmi)\n",
+        "if bmi<18:\n",
+        "    print('體重太輕啦~要多吃點東西囉')\n",
+        "elif bmi<24:\n",
+        "    print('體重很正常!要繼續保持呀')\n",
+        "elif bmi<27:\n",
+        "    print('體重過重囉~要注意均衡飲食囉')\n",
+        "else:\n",
+        "    print('體重肥胖!要多控制飲食方面了!')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "明天的午餐我打算吃義大利麵!\n",
+            "你要吃點什麼呢?pizza\n",
+            "pizza!哇!聽起來真不錯!\n",
+            "不過還是不要太常吃喔~讓我來幫你測一下BMI吧\n",
+            "請輸入體重(KG)?80\n",
+            "請輸入身高(M)?1.90\n",
+            "BMI為 22.1606648199446\n",
+            "體重很正常!要繼續保持呀\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WuS7PZXqVp9N",
+        "outputId": "af7ed950-77ef-4929-f55c-f555c94ca333"
+      },
+      "source": [
+        "print(\"我們再來玩個遊戲吧\")\n",
+        "your = int(input(\"請出拳 [0] 剪刀 [1] 石頭 [2] 布\"))\n",
+        "print(\"你出的是\", your)\n",
+        "import random\n",
+        "my= random.randint(0, 2)\n",
+        "print(\"我出的是\", my)\n",
+        "\n",
+        "if your == 0:\n",
+        "    if my == 0:\n",
+        "        print('平手!我們真有默契')\n",
+        "    elif my == 1:\n",
+        "        print('我贏了!真不錯耶')\n",
+        "    else:\n",
+        "        print('你贏了!太棒啦!')\n",
+        "elif your == 1:\n",
+        "    if my == 0:\n",
+        "        print('你贏了!太棒啦!')\n",
+        "    elif my == 1:\n",
+        "        print('平手!我們真有默契')\n",
+        "    else:\n",
+        "        print('我贏了!真不錯耶')\n",
+        "else:\n",
+        "    if my == 1:\n",
+        "        print('我贏了!真不錯耶')\n",
+        "    elif my == 2:\n",
+        "        print('你贏了!太棒啦!')\n",
+        "    else:\n",
+        "        print('平手!我們真有默契')\n",
+        "print(\"跟你玩的真開心!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "我們再來玩個遊戲吧\n",
+            "請出拳 [0] 剪刀 [1] 石頭 [2] 布2\n",
+            "你出的是 2\n",
+            "我出的是 1\n",
+            "我贏了!真不錯耶\n",
+            "跟你玩的真開心!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qDeOvHPQEfIJ",
+        "outputId": "2ddc1f41-9a0a-4823-e488-e7b4efdaff28"
+      },
+      "source": [
+        "answer=int(input(\"我還有一個小遊戲!你想試試看嘛!想[1]不想[2]\"))\n",
+        "if answer==2:\n",
+        "    print(\"那好吧~下次有機會再一起玩啊\")\n",
+        "else:\n",
+        "    print(\"太棒了!讓我們開始吧\")\n",
+        "    print(name,\"遊戲開始囉\")\n",
+        "    print(\"歡迎來到魔法世界\")\n",
+        "    candy_choice=input(\"你面前有兩顆糖果，請選擇 RED or BLUE:\")\n",
+        "    if candy_choice==\"BLUE\":\n",
+        "        print(\"你吃下了藍色糖果!身體突然間變小了\")\n",
+        "        door_choice=input(\"此時你看到面前有三扇門，請選擇其中一扇並展開你的冒險旅程 ONE or TWO or THREE:\")\n",
+        "        if door_choice==\"ONE\":\n",
+        "            print(\"你走進第一扇門，裡面是一個個的小精靈在飛舞\")\n",
+        "            print(\"你和小精靈們進行著下午茶,愉快的度過了一個下午\")\n",
+        "            print(\"魔法之旅結束\")\n",
+        "        elif door_choice==\"TWO\":\n",
+        "            print(\"你走進第二扇門，發現自己身處海底世界!\")\n",
+        "            print(\"你跟各式各樣的生物在海裡盡情嬉戲\")\n",
+        "            print(\"魔法世界之旅結束\")\n",
+        "        else:\n",
+        "            print(\"你走進第三扇門，發現自己來到了愛麗絲的夢遊仙境!\")\n",
+        "            choice1=input(\"你在這裡玩得很開心，此時一隻兔子問你，你要不要永遠留下來呀!這裡有你喜歡的所有東西喔~YES or NO\")\n",
+        "            if choice1==\"YES\":\n",
+        "                print(\"你選擇留下，你將永遠回不去現實世界\")\n",
+        "                print(\"魔法世界之旅沒有結束，你永遠地留下了\")\n",
+        "            if choice1==\"NO\":\n",
+        "                print(\"你選擇離開，回到現實世界\")\n",
+        "                print(\"魔法世界之旅結束\")\n",
+        "    else:\n",
+        "        print(\"你吃下了紅色糖果!回到了現實世界\")\n",
+        "        print(\"魔法世界之旅結束\")\n",
+        "print(\"遊戲結束\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "我還有一個小遊戲!你想試試看嘛!想[1]不想[2]1\n",
+            "太棒了!讓我們開始吧\n",
+            "elle 遊戲開始囉\n",
+            "歡迎來到魔法世界\n",
+            "你面前有兩顆糖果，請選擇 RED or BLUE:BLUE\n",
+            "你吃下了藍色糖果!身體突然間變小了\n",
+            "此時你看到面前有三扇門，請選擇其中一扇並展開你的冒險旅程 ONE or TWO or THREE:THREE\n",
+            "你走進第三扇門，發現自己來到了愛麗絲的夢遊仙境!\n",
+            "你在這裡玩得很開心，此時一隻兔子問你，你要不要永遠留下來呀!這裡有你喜歡的所有東西喔~YES or NOYES\n",
+            "你選擇留下，你將永遠回不去現實世界\n",
+            "魔法世界之旅沒有結束，你永遠地留下了\n",
+            "遊戲結束\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VjWWKeD6aSTY",
+        "outputId": "7fd2ae58-2729-4530-b3f8-28cd8145b72a"
+      },
+      "source": [
+        "print(\"我喜歡跟你聊天，現在有點累了，下次再聊!\")\n",
+        "print(\"再見，\", name, \"。很高興認識你!\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "祝你周末愉快!\n",
+            "我喜歡跟你聊天，現在有點累了，下次再聊!\n",
+            "再見， elle 。我喜歡跟你聊天!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NUjk33LycFUb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c18a61e2-0ee3-4ed3-d55d-63c65a8f8536"
+      },
+      "source": [
+        "do = input(\":: \")\n",
+        "if do == \"LOOK\":\n",
+        "     print(\"你在森林迷路了\")\n",
+        "     print(\"往左走還是往右走.\")\n",
+        "     do = input(\":: \")\n",
+        "     if do == \"左\":\n",
+        "         print(\"你發現了披薩和蛋糕.\")\n",
+        "         print(\"你肚子餓嗎？你想吃什麼?\")\n",
+        "\n",
+        "do = input(\":: \") \n",
+        "if do == \"蛋糕\":\n",
+        "    print(\"喔不！蛋糕發霉了.\")\n",
+        "    print(\"蛋糕不能吃了 :(\")\n",
+        "elif do == \"披薩\":\n",
+        "    print(\"起司披薩覺不錯，對吧！你要吃嗎？.\")\n",
+        "    do = input(\":: \")\n",
+        "    if do == \"要\":\n",
+        "        print(\"好的，披薩很棒呢.\")\n",
+        "        print(\"吃到一半發現遠方有棵樹，你有發現嗎？.\")\n",
+        "\n",
+        "        do = input(\":: \") \n",
+        "        if do == \"有\":\n",
+        "            print(\"是椰子樹呢！你口渴了嗎？\")\n",
+        "            print(\"要不要喝椰子水？\")\n",
+        "\n",
+        "            do = input(\":: \")\n",
+        "            if do == \"要\":\n",
+        "                print(\"喔不，椰子還沒成熟\")\n",
+        "                print(\"無法喝椰子水了:(\")\n",
+        "            elif do == \"不要\":\n",
+        "                  print(\"好吧\")\n",
+        "                  print(\"真可惜\\o/\")\n",
+        "    elif do == \"NO\":\n",
+        "           print(\"Well, there's nothing else left to eat.\")\n",
+        "           print(\"You do not survive :(\")\n",
+        "elif do == \"RIGHT\":\n",
+        "      print(\"No can do. That side is very slippery.\")\n",
+        "      print(\"You fall very far into some weird cavern.\")\n",
+        "      print(\"You do not survive :(\")\n",
+        "else:\n",
+        "      print(\"You can only do actions shown in capital letters.\")\n",
+        "      print(\"Try again!\")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            ":: LOOK\n",
+            "你在森林迷路了\n",
+            "往左走還是往右走.\n",
+            ":: 左\n",
+            "你發現了披薩和蛋糕.\n",
+            "你肚子餓嗎？你想吃什麼?\n",
+            ":: 披薩\n",
+            "起司披薩覺不錯，對吧！你要吃嗎？.\n",
+            ":: 要\n",
+            "好的，披薩很棒呢.\n",
+            "吃到一半發現遠方有棵樹，你有發現嗎？.\n",
+            ":: 有\n",
+            "是椰子樹呢！你口渴了嗎？\n",
+            "要不要喝椰子水？\n",
+            ":: 要\n",
+            "喔不，椰子還沒成熟\n",
+            "無法喝椰子水了:(\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5WQtkRFi0746"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
